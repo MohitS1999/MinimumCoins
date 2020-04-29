@@ -18,6 +18,7 @@ public class MinimumCoins{
 	public static int minCoins(int n,int coins[],int t,int dp[]){
 		if(n==0)
 			return 0;
+		//Eliminate Overlapping Subproblem 
 		if (dp[n]!=0)
 			return dp[n];
 		int ans=Integer.MAX_VALUE;
